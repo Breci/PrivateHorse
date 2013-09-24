@@ -1,0 +1,6 @@
+name: PrivateHorse
+version: 0.0.1
+description: Plugin privatisant les chevaux
+authors: [Breci]
+
+main: fr.breci.PrivateHorse.PrivateHorse
