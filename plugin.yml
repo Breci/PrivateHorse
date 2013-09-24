@@ -1,6 +1,15 @@
 name: PrivateHorse
-version: 0.0.1
+version: 1.0.0
 description: Plugin privatisant les chevaux
 authors: [Breci]
 
 main: fr.breci.PrivateHorse.PrivateHorse
+
+ permissions:
+   privatehorse.*:
+     description: Gives access to all PrivateHorse commands
+     children:
+       privatehorse.all: true
+    privatehorse.all:
+     description: Allows you to tame horses and mount tamed horse
+     default: true
