@@ -4,6 +4,7 @@ import java.util.logging.Logger;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import fr.breci.PrivateHorse.event.AttackHorseEvent;
 import fr.breci.PrivateHorse.event.PrivatiseHorseEvent;
 
 public class PrivateHorse extends JavaPlugin{
@@ -17,13 +18,14 @@ public class PrivateHorse extends JavaPlugin{
 	 public void onEnable()
 	    {
 		 getServer().getPluginManager().registerEvents(new PrivatiseHorseEvent(), this);
-	    logger.info("PrivateHorse activé");
+		 getServer().getPluginManager().registerEvents(new AttackHorseEvent(), this);
+	    logger.info("PrivateHorse active");
 	    }
 
 
 	public void onDisable()
 	{
-		logger.info("PrivateHorse désactivé");
+		logger.info("PrivateHorse désactive");
 		
 	}
 
