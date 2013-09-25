@@ -5,15 +5,15 @@ authors: [Breci]
 
 main: fr.breci.PrivateHorse.PrivateHorse
 
- permissions:
-   privatehorse.*:
-     description: Gives access to all PrivateHorse commands
-     children:
-       privatehorse.use: true
-       privatehorse.damage : false
+permissions:
+    privatehorse.*:
+      description: Gives access to all PrivateHorse commands
+      children:
+        privatehorse.use: true
+        privatehorse.damage : false
     privatehorse.use:
-     description: Allows you to tame horses and mount tamed horse
-     default: true
+      description: Allows you to tame horses and mount tamed horse
+      default: true
     privatehorse.damage:
-     description: Allows you to hurt tamed horse
-     default: true
+      description: Allows you to hurt tamed horse
+      default: false
