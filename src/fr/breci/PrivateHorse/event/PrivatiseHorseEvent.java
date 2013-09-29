@@ -33,10 +33,11 @@ public class PrivatiseHorseEvent implements Listener{
 						}
 						else{ //On apprivoise ce cheval
 							if (p.hasPermission("privatehorse.use")
-									&& !horse.isTamed())
+									&& !horse.isTamed()){
 								horse.setTamed(true);
-							horse.setOwner(p);
-							p.sendMessage("Vous venez de privatiser ce cheval !");
+								horse.setOwner(p);
+								p.sendMessage("Vous venez de privatiser ce cheval !");
+							}
 						}
 					}
 					if (p.hasPermission("privatehorse.use") && 
@@ -50,7 +51,6 @@ public class PrivatiseHorseEvent implements Listener{
 			}
 		}
 	}
-
 
 }
 
